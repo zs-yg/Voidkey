@@ -3,6 +3,7 @@ import { loadHomeContent } from './home.js';
 import { loadFeaturesContent } from './features.js';
 import { loadGuideContent } from './guide.js';
 import { loadAboutContent } from './about.js';
+import { loadAddContent } from './add.js';
 
 function handleRoute() {
     const hash = window.location.hash.substring(1) || 'home';
@@ -18,6 +19,9 @@ function handleRoute() {
             break;
         case 'about':
             loadAboutContent();
+            break;
+        case 'add':
+            loadAddContent();
             break;
         default:
             loadHomeContent();

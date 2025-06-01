@@ -2,7 +2,8 @@ const navItems = [
     { title: '首页', id: 'home' },
     { title: '功能介绍', id: 'features' },
     { title: '使用指南', id: 'guide' },
-    { title: '关于', id: 'about' }
+    { title: '关于', id: 'about' },
+    { title: '加入我们', id: 'add' }
 ];
 
 export function initNavigation() {

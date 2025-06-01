@@ -29,6 +29,14 @@
 1. 克隆仓库:
 ```bash
 git clone https://github.com/zs-yg/VoidKey.git
+git clone https://github.com/zs-yg/Voidkey.git
+git clone https://gitclone.com/github.com/zs-yg/Voidkey.git
+git clone https://kkgithub.com/zs-yg/Voidkey.git
+git clone https://hub.incept.pw/zs-yg/Voidkey.git
+git clone https://mirror.ghproxy.com/https://github.com/zs-yg/Voidkey.git
+git clone https://githubfast.com/zs-yg/Voidkey.git
+git clone https://ghproxy.net/https://github.com/zs-yg/Voidkey.git
+git clone https://github.moeyy.xyz/https://github.com/zs-yg/Voidkey.git
 cd VoidKey
 ```
 

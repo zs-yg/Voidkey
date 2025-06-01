@@ -6,7 +6,7 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <stdlib.h>  // for realpath
 
-static void on_generate_password(GtkWidget *widget, gpointer data) {
+static void on_generate_password(G_GNUC_UNUSED GtkWidget *widget, gpointer data) {
     show_password_generator(GTK_WINDOW(data));
 }
 

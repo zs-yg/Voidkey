@@ -2,7 +2,7 @@
 #include <gtk/gtk.h>
 #include <glib/gstdio.h>
 
-static void on_link_clicked(GtkLabel *label, const char *uri, gpointer data) {
+static void on_link_clicked(G_GNUC_UNUSED GtkLabel *label, const char *uri, gpointer data) {
     GtkUriLauncher *launcher = gtk_uri_launcher_new(uri);
     gtk_uri_launcher_launch(launcher, GTK_WINDOW(data), NULL, NULL, NULL);
     g_object_unref(launcher);
@@ -52,7 +52,7 @@ void show_about_dialog(GtkWindow *parent) {
     gtk_label_set_attributes(GTK_LABEL(title), attrs);
     pango_attr_list_unref(attrs);
     
-    GtkWidget *version = gtk_label_new("版本: v4.0");
+    GtkWidget *version = gtk_label_new("版本: v5.0");
     gtk_widget_set_halign(version, GTK_ALIGN_CENTER);
     
     GtkWidget *author = gtk_label_new("作者: zs-yg");

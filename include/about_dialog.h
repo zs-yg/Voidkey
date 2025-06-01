@@ -5,4 +5,4 @@
 
 void show_about_dialog(GtkWindow *parent);
 
-#endif // ABOUT_DIALOG_H
+#endif

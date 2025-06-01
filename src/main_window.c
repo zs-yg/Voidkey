@@ -1,6 +1,7 @@
 #include "main_window.h"
 #include "password_generator.h"
 #include "file_reader.h"
+#include "about_dialog.h"
 #include <gtk/gtk.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <stdlib.h>  // for realpath
@@ -72,6 +73,15 @@ GtkWidget *create_main_window(GtkApplication *app) {
     g_signal_connect(button, "clicked", G_CALLBACK(on_generate_password), window);
     gtk_box_append(GTK_BOX(box), button);
 
+    // 添加标题栏按钮
+    GtkWidget *header = gtk_header_bar_new();
+    gtk_header_bar_set_show_title_buttons(GTK_HEADER_BAR(header), TRUE);
+    
+    GtkWidget *about_button = gtk_button_new_with_label("关于");
+    g_signal_connect(about_button, "clicked", G_CALLBACK(show_about_dialog), window);
+    gtk_header_bar_pack_end(GTK_HEADER_BAR(header), about_button);
+    
+    gtk_window_set_titlebar(GTK_WINDOW(window), header);
     gtk_window_set_child(GTK_WINDOW(window), box);
     return window;
 }

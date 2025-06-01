@@ -3,7 +3,8 @@ const navItems = [
     { title: '功能介绍', id: 'features' },
     { title: '使用指南', id: 'guide' },
     { title: '关于', id: 'about' },
-    { title: '加入我们', id: 'add' }
+    { title: '加入我们', id: 'add' },
+    { title: 'GitHub', id: 'github' }
 ];
 
 export function initNavigation() {

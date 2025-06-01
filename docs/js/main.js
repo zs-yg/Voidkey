@@ -4,6 +4,7 @@ import { loadFeaturesContent } from './features.js';
 import { loadGuideContent } from './guide.js';
 import { loadAboutContent } from './about.js';
 import { loadAddContent } from './add.js';
+import { loadGithubContent } from './github.js';
 
 function handleRoute() {
     const hash = window.location.hash.substring(1) || 'home';
@@ -22,6 +23,9 @@ function handleRoute() {
             break;
         case 'add':
             loadAddContent();
+            break;
+        case 'github':
+            loadGithubContent();
             break;
         default:
             loadHomeContent();

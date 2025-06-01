@@ -13,6 +13,9 @@ export function loadHomeContent() {
                 <li>现代化用户界面</li>
             </ul>
         </div>
+        <div class="github-corner">
+            <img src="img/github.png" alt="GitHub" class="github-logo">
+        </div>
     `;
     
     contentElement.appendChild(section);

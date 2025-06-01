@@ -10,13 +10,12 @@ static void on_generate_password(GtkWidget *widget, gpointer data) {
 }
 
 GtkWidget *create_main_window(GtkApplication *app) {
-    // 创建主窗口
+    // 创建主窗口并禁用全屏
     GtkWidget *window = gtk_application_window_new(app);
-    gtk_window_set_title(GTK_WINDOW(window), "密码工具");
-    gtk_window_set_default_size(GTK_WINDOW(window), 500, 400);
-    
-    // 设置窗口默认尺寸(增大窗口)
+    gtk_window_set_title(GTK_WINDOW(window), "Voidkey");
     gtk_window_set_default_size(GTK_WINDOW(window), 800, 600);
+    gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+    gtk_window_set_deletable(GTK_WINDOW(window), FALSE);
 
     // 使用GTK4默认主题图标
     g_print("使用GTK4默认主题图标\n");

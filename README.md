@@ -76,6 +76,11 @@ make
 
 📧 Email: chr_super@outlook.com  
 
+## 推广
+```bash
+qq群：1043867176
+```
+
 ---
 
 <div align="center">
